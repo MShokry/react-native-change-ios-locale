@@ -1,6 +1,6 @@
 {
   "name": "react-native-change-ios-locale",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Force ios to change the language for the native module",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -36,7 +36,10 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/MShokry/react-native-change-ios-locale",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MShokry/react-native-change-ios-locale.git"
+  },
   "author": "Mahmoud Shokry <msn4eg@gmail.com> (https://github.com/MShokry)",
   "license": "MIT",
   "bugs": {
@@ -143,5 +146,8 @@
         }
       ]
     ]
+  },
+  "directories": {
+    "example": "example"
   }
 }

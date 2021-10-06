@@ -17,6 +17,6 @@ const ChangeIosLocale = NativeModules.ChangeIosLocale
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return ChangeIosLocale.multiply(a, b);
+export function switchLang(l: string): void {
+  ChangeIosLocale.switchLang(l);
 }

@@ -11,11 +11,21 @@ npm install react-native-change-ios-locale
 ## Usage
 
 ```js
-import { multiply } from "react-native-change-ios-locale";
+import { switchLang } from "react-native-change-ios-locale";
 
 // ...
-
-const result = await multiply(3, 7);
+useEffect(() => {
+    async function changeLocalization() {
+      await translations.setLanguage(selectedLocale);
+    }
+    if (selectedLocale) {
+      changeLocalization().then(() => {
+        if (Platform.OS === 'ios') {
+          switchLang(selectedLocale);
+        }
+      });
+    }
+  }, [selectedLocale]);
 ```
 
 ## Contributing
